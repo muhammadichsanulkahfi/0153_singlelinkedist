@@ -58,7 +58,14 @@ public:
     *current = START;
 
     while ((*current != NULL) && (nim != (*current)->noMhs))
-    {}
+    {
+     *previous = *current;
+     *current = (*current)->nexet;
+     {
+       return (*current != NULL);
+       
+     }
+    }
     }
 
 
